@@ -2,8 +2,8 @@ name: Sync full repo from leilingzero/java
 
 on:
   schedule:
-    - cron: '0 16 */2 * *'  # 每两天北京时间 00:00 自动运行
-  workflow_dispatch:        # 支持手动触发
+    - cron: '0 * * * *'  # 每小时执行一次
+  workflow_dispatch:       # 支持手动触发
 
 jobs:
   sync_full:
